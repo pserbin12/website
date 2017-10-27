@@ -1,0 +1,92 @@
+.navbar {
+  background-color: #000000;
+  overflow: hidden;
+  font-family: sans-serif;
+  letter-spacing: 7px;
+  position: relative;
+  /*z-index: 2;*/
+}
+
+.navbar a {
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 20px;
+  display: block;
+  float: left;
+}
+
+/*.clearfix {
+  clear: both;
+}*/
+
+.navbar a:hover {
+  background-color: white;
+  color: #000000;
+}
+
+/*.dropdown button {
+  float: left;
+  overflow: hidden;
+  text-transform: uppercase;
+}*/
+
+.dropdown {
+  /*border: none;
+  outline: none;
+  padding: inherit;*/
+  color: white;
+  background-color: inherit;
+  float: left;
+  overflow: hidden;
+  text-transform: uppercase;
+}
+
+.about-me a:hover {
+  color: black;
+}
+
+.drop-content {
+  display: none;
+  position: relative;
+  background: white;
+}
+
+.drop-content a {
+  float: none;
+  color: black;
+  text-decoration: none;
+  /*padding: 7px 4px;*/
+  display: block;
+  text-align: left;
+}
+
+.drop-content a:hover {
+  background-color: #ddd;
+  color: #000000;
+}
+
+.dropdown:hover .drop-content {
+  display: block;
+}
+
+
+<div class="navbar">
+      <a href="./index.html">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./projects.html">Projects</a>
+  <div class="dropdown">
+        <a href="#" class="about-me">About Me</a>
+    <div class="drop-content">
+      <a href="./about.html">My Bio</a>
+      <a href="./resume.html">My Resume</a>
+    </div>
+  </div>
+</div>
+
+
+
+
+10/23/17
+To make an updateable blog, I'd need to make separate pages within the html page that replaced the main content with the article
